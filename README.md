@@ -18,7 +18,7 @@
  
  
  
- ## PROBLEMSTATEMENT
+ ## PROBLEM STATEMENT
 
  
 ### Background and Importance:
@@ -26,12 +26,12 @@ Plant diseases continue to be a significant concern for global agriculture, with
  
 Potatoes are a staple food crop consumed worldwide and are particularly vulnerable to diseases such as early blight and late blight. Early blight, caused by Alternaria solani, results in characteristic dark lesions on leaves and stems, while late blight, caused by Phytophthora infestans, is known for its rapid spread and destructive impact on potato foliage and tubers. The ability to identify these diseases swiftly and accurately is paramount for implementing timely control measures, minimizing crop losses, and optimizing resource utilization.
  
-Technological Advancements:
+# Technological Advancements:
 Recent advancements in deep learning and computer vision have revolutionized the field of plant disease classification. Convolutional Neural Networks (CNNs) have demonstrated remarkable capabilities in image analysis tasks, enabling them to learn intricate features and patterns directly from images. Transfer learning, a technique where pre-trained models are fine-tuned for specific tasks, has expedited the development of accurate models with relatively smaller datasets.
  
 Residual Networks (ResNet), a variant of CNNs, have further improved model performance by addressing the challenges of training very deep networks. The introduction of residual connections allows for the training of deep architectures while mitigating the vanishing gradient problem, leading to enhanced feature extraction and classification accuracy.
  
-Challenges and Solutions:
+# Challenges and Solutions:
 Developing an accurate plant disease classification model presents several challenges. Ensuring a representative and diverse dataset is crucial to avoid bias and enhance the model's generalization ability. Data augmentation techniques, such as rotation, cropping, and color variations, can aid in expanding the dataset and improving the model's resilience to variations in image quality and conditions.
  
 The selection of appropriate hyperparameters and model architectures requires careful consideration. Hyperparameter tuning techniques, like grid search or random search, can help optimize model performance. Moreover, leveraging transfer learning by using pre-trained models trained on similar tasks can significantly expedite the training process and boost the model's accuracy.
