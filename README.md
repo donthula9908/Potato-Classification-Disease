@@ -68,6 +68,7 @@ By leveraging these cutting-edge technologies, we have developed a solution that
  
 # DATASET
 Our dataset comprises 2000 potato disease images from Kaggle, forming the basis for model training and evaluation.
+https://www.kaggle.com/datasets/arjuntejaswi/plant-village
 
 
 ## DATACOLLECTIONANDMODELMAKING
