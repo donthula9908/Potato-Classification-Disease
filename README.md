@@ -6,13 +6,7 @@
  
  
  
-Plant Disease Classification using CNN and Resnet
-Models
-Subject: Data 606
-Summer 2023
-Professor: Chaojie Wang
-PAVAN KANTH KATTIKAM(pkattik1@umbc.edu)
-UW75335
+# Plant Disease Classification using CNN and Resnet Models
  
  
  
@@ -24,24 +18,10 @@ UW75335
  
  
  
- 
- 
- 
-Video Link
-
-https://youtu.be/crT2WZDT76w
- 
-PPT Link
-https://github.com/PAVANKANTH96/Pavankanth_Data606/upload/main/docs
- 
-GitHub Link
-https://github.com/PAVANKANTH96/Pavankanth_Data606
- 
- 
-PROBLEMSTATEMENT
+ ## PROBLEMSTATEMENT
 
  
-Background and Importance:
+### Background and Importance:
 Plant diseases continue to be a significant concern for global agriculture, with the potential to cause substantial economic losses and threaten food security. The prevalence of these diseases is exacerbated by factors such as climate change, globalization, and increased movement of agricultural commodities. The development of effective and automated disease detection methods is imperative to address these challenges and ensure sustainable crop production.
  
 Potatoes are a staple food crop consumed worldwide and are particularly vulnerable to diseases such as early blight and late blight. Early blight, caused by Alternaria solani, results in characteristic dark lesions on leaves and stems, while late blight, caused by Phytophthora infestans, is known for its rapid spread and destructive impact on potato foliage and tubers. The ability to identify these diseases swiftly and accurately is paramount for implementing timely control measures, minimizing crop losses, and optimizing resource utilization.
@@ -56,7 +36,7 @@ Developing an accurate plant disease classification model presents several chall
  
 The selection of appropriate hyperparameters and model architectures requires careful consideration. Hyperparameter tuning techniques, like grid search or random search, can help optimize model performance. Moreover, leveraging transfer learning by using pre-trained models trained on similar tasks can significantly expedite the training process and boost the model's accuracy.
  
-Potential Impact:
+# Potential Impact:
 The successful development and deployment of a plant disease classification model for potatoes hold numerous potential benefits. Farmers and agricultural practitioners will gain access to a powerful tool that can rapidly assess the health status of potato plants, enabling them to make informed decisions about disease management strategies, including targeted pesticide application and cultural practices.
  
 Furthermore, the data collected through the platform can contribute to disease monitoring and epidemiological studies, aiding researchers in understanding disease dynamics and potential outbreaks. The model's capabilities extend beyond individual farms, potentially contributing to larger-scale efforts aimed at disease control, surveillance, and regulatory actions.
@@ -64,7 +44,7 @@ Furthermore, the data collected through the platform can contribute to disease m
 In a broader context, the research aligns with the goals of precision agriculture, where technology-driven solutions are leveraged to optimize resource utilization, increase crop yields, and minimize environmental impacts. The automated disease classification model has the potential to revolutionize the way plant diseases are detected and managed, ultimately contributing to enhanced food security and sustainable agricultural practices on a global scale.
 
 
-OBJECTIVE
+# OBJECTIVE
 
  
 The primary objective of our study is to employ trained Convolutional Neural Networks (CNN) and Residual Networks (ResNet) models to accurately classify potato plants based on their health status and disease presence. Specifically, we aim to discern whether a plant is healthy or infected with a particular disease. In cases of infection, our goal is to determine the specific type of disease afflicting the plant.
@@ -74,7 +54,7 @@ By utilizing these advanced classification models, our intention is to significa
 We recognize that the advancement of technological research in agriculture is a pivotal requirement for the future. This pursuit of innovative solutions directly contributes to the sustainable development of agriculture and aligns with the broader goals of technological progress in the field. Through our work, we aim to foster a positive cycle of advancement, where cutting-edge technology meets agricultural challenges, thereby cultivating a more secure and prosperous future for global food production.
  
  
-SOLUTION
+# SOLUTION
  
 Our solution approach involved gathering a comprehensive dataset comprising 2,000 images distributed across three distinct classes of potato plants. To harness the potential of this dataset, we employed Convolutional Neural Networks (CNN) and Residual Networks (ResNet) as our chosen model architectures.
  
@@ -86,75 +66,27 @@ It's noteworthy that our methodology is rooted in both established and tradition
  
 By leveraging these cutting-edge technologies, we have developed a solution that demonstrates the potential to accurately classify potato plant images into distinct categories. The results obtained through our rigorous testing process provide insights into the models' performance, which can guide their deployment and potential refinements in real-world applications.
  
-DATASET
+# DATASET
 Our dataset comprises 2000 potato disease images from Kaggle, forming the basis for model training and evaluation.
 
 
-Fig 1. Sample images Dataset
- 
-parameters:
-There are two parameters of the dataset, namely:
-1. Images
-This column contains the local paths for the images which are fed into the model to pick up images.
-2. Label
-This parameter consists of the labels to each of the image. The labeling process involves assigning one of three class names ('Potato___Early_blight', 'Potato___Late_blight', 'Potato___healthy') to each of the 2000 images. This dataset consists of 3 classes distributed between diseased and healthy images.
-
-Fig 2. Class Distribution of Dataset
-
-
- 
-FRAMEWORK
-
- 
-
-Fig 3. Model workflow
-
- 
-
-DATACOLLECTIONANDMODELMAKING
-Data Collection Process:
+## DATACOLLECTIONANDMODELMAKING
+## Data Collection Process:
 In this study, a dataset comprising 2000 potato leaf images was assembled, featuring both diseased and healthy states. The dataset encompassed three classes: early blight disease, late blight disease, and healthy leaves. This dataset served as the cornerstone for exploratory data analysis (EDA), providing insights into class distribution and image variations. EDA guided preprocessing decisions and model selection. The dataset's comprehensive nature enabled a comprehensive understanding of potato leaf conditions, vital for robust model development and evaluation.
  
-Data Augmentation:
+## Data Augmentation:
 Recognizing the influence of data volume on algorithm performance, we harnessed data augmentation to address the original dataset's limited photo count. Augmentation, a technique generating new data from existing samples, proved pivotal in training machine learning models effectively. By applying transformations like compressions, rotations, stretches, and color shifts, we diversified the dataset, enriching model generalization. The utilization of TensorFlow's ImageDataGenerator facilitated seamless implementation. Augmentation's incorporation not only expanded dataset size but also heightened the model's adaptability. Augmented data contributed to bolstering model resilience, enhancing classification system precision and effectiveness.
 
-Fig 4. Image data generator
-
-
-Fig 5. Images of Augmented data
-
-Training and Testing:
+## Training and Testing:
 The training phase encompassed training both the CNN and ResNet models over 25 epochs. We incorporated an Early Stopping callback that monitored loss improvement; if no progress was observed after two epochs, the training process was halted. This approach aimed to expedite the training process while preventing overfitting. Throughout this iterative process, we meticulously recorded loss and accuracy metrics for each epoch.
  
 Dataset division adhered to an 8:1:1 ratio, allocating 80% for training, 10% for testing, and 10% for validation. This partitioning ensured robust model assessment and aided in assessing generalization capabilities. Our training methodology prioritized efficient convergence, early stopping, and comprehensive metric tracking, collectively contributing to informed model selection and performance evaluation.
  
-RESULTS
+## RESULTS
 The training phase yielded an accuracy of 97% with the CNN model and 98% with the ResNet model. For the test dataset, the CNN model achieved an accuracy of 92%, while the ResNet model demonstrated a higher accuracy of 99%. These results underscore the ResNet model's superior generalization capacity and overall effectiveness in accurately classifying potato diseases.
  
 
-Fig 6. CNN model Epochs, Training and validation accuracy and loss
-
-
-
-Fig 7. RESNET model Epochs, Training and validation accuracy and loss.
-
-
-
-Fig 8. CNN model Summary
-
-
-
-Fig 9. RESNET model Summary
-
-
-
-fig 10. CNN model predictions on Test data
-
-
-
-fig 11. RESNET model predictions on Test data
-
-IMPACT OF THE PROJECT
+# IMPACT OF THE PROJECT
 
 The impact of potato disease classification is profound and multi-dimensional. Firstly, its significance lies in the realm of agricultural sustainability. Accurate disease identification facilitates early detection and management, thereby curbing crop losses and mitigating economic repercussions. The integration of Convolutional Neural Networks (CNN) and Residual Networks (ResNet) elevates the accuracy of disease classification, rendering management strategies more effective and informed.
 
@@ -166,12 +98,11 @@ The research's broader impact extends to the realm of precision agriculture, enc
 
  
 
-REFERENCES
+# REFERENCES
 
 [1] https://github.com/codebasics/potato-disease-classification/blob/main/training/potato-disease-classification-model.ipynb
 [2] https://www.kaggle.com/datasets/arjuntejaswi/plant-village
 [3] https://www.mdpi.com/2073-4395/12/10/2395
- 
 [4] https://plantmethods.biomedcentral.com/articles/10.1186/s13007-021-00722-9
  
  
